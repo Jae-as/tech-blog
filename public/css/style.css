@@ -1,0 +1,145 @@
+.light-theme {
+  --background-primary: hsl(0, 0%, 100%);
+  --background-secondary: hsl(0, 0%, 97%);
+
+  --action-primary: hsl(214, 32%, 91%);
+  --action-secondary: hsl(210, 38%, 95%);
+
+  --foreground-primary: #8bc53f;
+  --foreground-secondary: #009966;
+  --foreground-tertiary: #29b473;
+
+  --fa-primary-color:#00a69c;
+  --fa-secondary-color:white;
+
+  --accent: #00a69c;
+}
+
+:root {
+  /* base color */
+  --white: hsl(0, 0%, 100%);
+
+  /* typography */
+  --fs-base: 0.85rem;
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.25rem;
+  --fs-4: 0.875rem;
+  --fs-5: 0.75rem;
+
+  /* line spacing */
+  --py: 5 rem;
+
+  --aqua: #00a69c;
+  --ltgreen:#8bc53f;
+  --bluegreen:#009966;
+  --green:#29b473;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: corder-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+button {
+  display: block;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn{
+    border: none;
+    background: none;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: var(--fs-base);
+  line-height: 1.8;
+}
+
+body {
+    background-color: white;
+}
+
+:focus {
+  outline-offset: 0.25rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 1.25rem;
+  border: 0.25rem solid;
+}
+
+.light-theme::--webkit-scrollbar-thumb {
+  border-color: hsl(0, 0%, 90%);
+}
+
+.light-theme::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 90%);
+}
+
+.h1,
+h2,
+h3,
+h4 {
+  display: block;
+  color: var(--foreground-primary);
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: var(--fs-3);
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: var(--fs-4);
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: var(--fs-4);
+}
+
+.text-tiny {
+  font-size: var(--fs-5);
+}
